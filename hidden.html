@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden page</title>
+</head>
+<body>
+
+<h2>Hidden things by Akhil Kumar Reddy Mallepally</h2>
+
+<form>
+    <label for="form1_creds">Enter the secret word </label>
+    <input type ="password" id="form1_creds" name="form1_creds" min=10 max=50 step=2 value=Secret> <br>
+
+    <label for="form1_guess">Enter a guess </label>
+    <input type ="text" id="form1_guess" name="form1_guess" autofocus> <br>
+
+    <input type="button" onclick="processGuess()" value="Check the guess">
+</form>
+
+
+<p id="result">The results will be displaced.</p>
+
+<script> 
+
+var correct = 0;
+var wrong = 0;
+function processGuess(){
+    console.log("Getting form values")
+    password = document.getElementById("form1_creds").value
+    guess = document.getElementById("form1_guess").value
+    out = document.getElementById("result")
+    if(password==guess){
+        correct+=1;
+        alert("Congratualtions")
+        out.innerHTML = "Correct count is: "+correct
+    } else {
+        wrong+=1;
+        alert("Sorry")
+        out.innerHTML = "Wrong count is: "+wrong
+    }
+}
+</script>
+<div class = "container">
+    <img id="myPlant" src="nemesia.jpg" alt="Check Internet Connection" width=200 height=200 onclick="rotateImage()">
+</div>
+<script>
+    var currentImage = 0;
+    function rotateImage(){
+    switch(currentImage){
+        case 0:
+            document.getElementById("myPlant").src="acalypha.jpg"
+            currentImage+=1
+            alert("The value of curentImage is:"+currentImage)
+            break;
+        case 1:
+            document.getElementById("myPlant").src="ehretia.jpg"
+            currentImage+=1
+            alert("The value of curentImage is:"+currentImage)
+            break;
+        case 2:
+            document.getElementById("myPlant").src="legousia.jpg"
+            currentImage+=1
+            alert("The value of curentImage is:"+currentImage)
+            break;
+        default:
+            currentImage = 0;
+            document.getElementById("myPlant").src="nemesia.jpg"
+            alert("The value of curentImage is:"+currentImage)
+    }
+}
+</script>
+</body>
+</html> 
