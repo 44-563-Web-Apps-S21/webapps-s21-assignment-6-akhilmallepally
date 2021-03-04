@@ -2,6 +2,12 @@
 <html>
 <head>
     <title>Hidden page</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -9,10 +15,10 @@
 
 <form>
     <label for="form1_creds">Enter the secret word </label>
-    <input type ="password" id="form1_creds" name="form1_creds" min=10 max=50 step=2 value=Secret> <br>
+    <input type ="password" class="label" id="form1_creds" name="form1_creds" min=10 max=50 step=2 value=Secret> <br>
 
     <label for="form1_guess">Enter a guess </label>
-    <input type ="text" id="form1_guess" name="form1_guess" autofocus> <br>
+    <input type ="text" class="label" id="form1_guess" name="form1_guess" autofocus> <br>
 
     <input type="button" onclick="processGuess()" value="Check the guess">
 </form>

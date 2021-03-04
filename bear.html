@@ -2,16 +2,22 @@
 <html>
  <head>
      <title>Bear Website</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
  </head>
 <body>
 
 <h2>Akhil Kumar Reddy Mallepally builds a bear</h2>
 <form>
-    <input type="checkbox" id="check_hat" value="hat">
+    <input type="checkbox" class="btn" id="check_hat" value="hat">
     <label for="check_hat">Hat</label><br>
-    <input type="checkbox" id="check_scarf" value="scarf">
+    <input type="checkbox" class="btn" id="check_scarf" value="scarf">
     <label for="check_scarf">Scarf</label><br>
-    <input type="checkbox" id="check_shirt" value="shirt">
+    <input type="checkbox" class="btn" id="check_shirt" value="shirt">
     <label for="check_shirt">Shirt</label><br>
     <input type="button" onclick="startBear()" value="Start a bear"> 
  </form>
